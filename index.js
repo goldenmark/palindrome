@@ -48,7 +48,11 @@ function TranslatedPhrase(content, translation) {
   this.translation = translation;
 
   this.palindrome = function palindrome() {
-    return this.processedContent(this.translation) === this.processedContent(this.translation).reverse();
+    if (this.letters(this.translation)) {
+      return this.processedContent(this.translation) === this.processedContent(this.translation).reverse();
+    } else {
+      return false;
+    }
   }
 }
 
