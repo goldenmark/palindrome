@@ -34,7 +34,11 @@ function Phrase(content) {
   }
 
   this.palindrome = function palindrome() {
-    return this.processedContent(this.content) === this.processedContent(this.content).reverse();
+    if (this.letters(this.content)) {
+      return this.processedContent(this.content) === this.processedContent(this.content).reverse();
+    } else {
+      return false;
+    }
   }
 }
 

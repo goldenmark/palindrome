@@ -6,6 +6,11 @@ describe("Phrase", function() {
 
   describe("#palindrome", function() {
 
+   it("should return false for an empty string", function() {
+      let emptyString = new Phrase("");
+      assert(!emptyString.palindrome());
+    });
+
     it("should return false for a non-palindrome", function() {
       let nonPalindrome = new Phrase("apple");
       assert(!nonPalindrome.palindrome());

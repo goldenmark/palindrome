@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/goldenmark/palindrome/issues"
   },
-  "homepage": "https://github.com/goldenmark/palindrome#readme"
+  "homepage": "https://github.com/goldenmark/palindrome#readme",
+  "directories": {
+    "test": "test"
+  }
 }
